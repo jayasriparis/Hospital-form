@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hospital Appointent booking</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jayasri Hospital</h1>
+        <br>
+        
+        <h2>Appointment Booking</h2>
+        <hr>
+        <p>Book you Appointment with our Doctors now!</p>
+        <hr>
+        <h2>Patient Information</h2>
+        
+
+        <form>
+            <label>Patient Name</label>
+            <input type="text" placeholder="Enter Patient Name" required>
+            <br><br>
+
+            <label>Age</label>
+            <input type="number" placeholder="Enter Patient Age" required>
+            <br><br>
+
+            <input type="radio" name="gender">
+            <label>Male</label>
+            <input type="radio" name="gender">
+            <label>Female</label>
+            <input type="radio" name="gender">
+            <label>Others</label>
+            <br><br>
+            <label>Contact</label>
+            <input type="number" placeholder="Enter Mobile number" required>
+            <hr>
+            <label>Select Department</label>
+
+            <select required>
+                <option>Select Department</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopedics</option>
+                <option>Pediatrics</option>
+        
+                
+    
+            </select>
+            <br><br>
+            <label>Appointment date</label>
+            <input type="date" placeholder="Select date" required>
+            <br><br>
+
+            <label>Appointment Time</label>
+            <input type="time" placeholder="Select Time" required>
+            <br><br>
+
+            <button type="submit">Book Appointment</button>
+
+            <br><br>
+
+
+
+
+            
+        </form>
+
+        <div class="success" id="successmsg">
+            Appointent Booked Successfully!
+        </div>
+
+    </div>
+    <script>
+        function showmessage(){
+            document.getElementById("successmsg").style.display ="block";
+        }
+
+    
+    </script>
+</body>
+    
+</body>
+</html>
